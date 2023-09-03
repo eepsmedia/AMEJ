@@ -1,0 +1,36 @@
+---
+title: "About"
+---
+
+This website supplements a series of articles 
+by Tim Erickson 
+to be published in 2023 and 2024 in the AMEJ.
+
+It was prepared and designed by Tim and hosted (thanks, AAMT!) at AMEJ. 
+
+### Colophon
+
+Do you want to make a website like this? 
+It's easier than it looks, thanks to the good people
+at [quarto](https://www.quarto.org).
+
+It's all written in text files using the extension `qmd`, 
+which stands for "quarto markdown."
+_Markdown_ is a technique in which you add special characters to indicate
+what you want, and then ask the system to _render_ it into
+html---which is what you need for a website.
+
+The heading and first paragraph look like this in markdown:
+
+``` {.md}
+### Colophon
+
+Do you want to make a website like this? 
+It's easier than it looks, thanks to the good people
+at [quarto](https://www.quarto.org).
+```
+
+If you want to see exactly how _this_ website was done, 
+it's open source. 
+You can download the whole thing from [github](https://www.github.com).
+

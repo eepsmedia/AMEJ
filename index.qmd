@@ -1,0 +1,58 @@
+{{< include _awash-setup.qmd  >}}
+
+## CODAP for Australians: an introduction
+
+
+Version 9.0 of the 
+[Australian Curriculum](https://v9.australiancurriculum.edu.au/) 
+is an exciting document.
+The [Mathematics](https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics) and 
+[Digital Technology](https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/technologies) 
+sections open doors for Australian teachers,
+suggesting new directions and possiblities.
+
+The new-ish bits are often related to technology and/or data. 
+Computers---or computational thinking---are taking a more prominent role
+in society and, correspondingly, in mathematics education. 
+And the prominence of data in today's world 
+leads us to continue to emphasize statistics, data analysis, and probability 
+as important parts of every student's maths upbringing.
+
+Making that work in the classroom requires flexible (and inexpensive) tools.
+
+To that end, this site introduces 
+the Common Online Data Analysis Platform (CODAP),
+an open-source, web-based tool designed for schools.
+Amazingly, CODAP is free.
+You (or your students) don't even need to sign up to use it.
+
+CODAP has many, many capabilities. 
+This site will only get you started. 
+During 2023 and 2024,
+in a series of articles in the [AMEJ](https://aamt.edu.au/teachers/journals/aamt-journals/), 
+we will look at a few different possible uses of CODAP,
+highlighting "mathematical processes" from Version Nine:
+
+* Mathematical modelling
+* Statistical investigation
+* Probability experiments and simulation
+* Computational thinking
+
+We will not pretend that these are classroom-ready lessons,
+but they might whet your appetite for more, 
+and encourage you to find---and create!---lessons 
+you can use as you move forward.
+
+See the links on the left? 
+Begin with `CODAP basics` and then move on to other topics. 
+
+The topics officially appear according to the schedule below. 
+But we have prepared draft examples in advance so that
+you can "read ahead" if you are interested. 
+
+| AMEJ issue | topic |
+|----|----|
+| September 2023 | Modelling |
+| December 2023 | Statistics |
+| March 2024 | Probability |
+| July 2024 | Computational thinking |
