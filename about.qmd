@@ -32,5 +32,6 @@ at [quarto](https://www.quarto.org).
 
 If you want to see exactly how _this_ website was done, 
 it's open source. 
-You can download the whole thing from [github](https://www.github.com).
+You can download the whole thing from 
+[github](https://github.com/eepsmedia/AMEJ).
 

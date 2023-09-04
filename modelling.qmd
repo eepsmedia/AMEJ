@@ -13,33 +13,41 @@ central to school mathematics:
 using a mathematical function to approximate data
 from some phenomenon.
 
-![](art/beads-photo.png)
+::: {.column-margin}
+![](art/beads-on-scale.png){width="90%"}
+:::
+
 
 Here's what we do:
 
 * Reach into a container of glass beads and pull out a few, 
 up to about 20.
 * Count the beads and record the number.
-* Put the beads in a bowl and weigh them. ^[Note: do not "tare" the scale.
+* Put the beads in a bowl and weigh them.^[Note: do not "tare" the scale.
 The weight will be the bowl plus the beads.
 Do not alert the students to this!]
 * Enter the `count` and the `weight` into a CODAP table. 
-* Put the beads back, mix, and repeat.
+* Put the beads back into the container and repeat.
 
 Then, of course, we will plot the data
 (what goes on the horizontal axis??) and try to 
 find a function that fits the data. 
 
-You already know how to make a graph.
+::: {.column-margin}
+![The ruler palette is attached to the graph.](art/ruler-palette-movable-line.png){width="50%"}
+:::
+
+You already know [how to make a graph](basics.qmd).
 To make a line,
 go to the ruler palette of the graph and choose `Movable Line`.
 Drag its handles to approximate the data.
 Notice how the slope-intercept form of the line 
 appears _and updates_ as you drag. 
 
+
 ::: {.column-page-right}
 <script>
-    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2Fc0WthQUBDM9AxUqbLNMT%2Ffile.json";
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json";
     awash.liveDemoAt(theURL);
 </script>
 :::
@@ -56,7 +64,7 @@ How many beads would that be?
 These lead to more subtle and statistical questions...
 
 ::: {.column-margin}
-![One possible line](art/beads-graph.png)
+![One possible line](art/good-fit.png)
 :::
 
 
@@ -65,6 +73,13 @@ These lead to more subtle and statistical questions...
 * Looking at the formula in the figure, do you think
 it's possible that the true formula is `weight = 2 * count + 100`?
 
+:::{.callout-tip}
+## Need more screen space?
+
+Working inside this site can be constraining. 
+To see this CODAP file "normally," in your browser,
+[use this link](https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json){target="_blank"}.
+:::
 ### More commentary
 
 **Functional form**. 

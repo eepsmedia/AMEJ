@@ -2,6 +2,16 @@
 
 ## Statistical investigation
 
+::: {.callout-caution}
+## You're here early!
+
+We will officially release this page in December 2023, when the article about 
+statistical thinking comes out in the AMEJ.
+
+But you've gone to the trouble of finding this page, 
+we might as well let you see where we are!
+:::
+
 CODAP is a data analysis platform, 
 so we expect it to help with statitical investigations. 
 Here is a relatively simple example.

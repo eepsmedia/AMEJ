@@ -2,6 +2,16 @@
 
 ## Probability Experiments and Simulations
 
+::: {.callout-caution}
+## You're here early!
+
+We will officially release this page in March 2024, when the article about 
+probability and simulation comes out in the AMEJ.
+
+But you've gone to the trouble of finding this page, 
+we might as well let you see where we are!
+:::
+
 On the [Modelling](modelling.qmd) page,
 we used a function to approximate some measurements.
 Let's look at another kind of model,

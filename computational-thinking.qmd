@@ -1,0 +1,82 @@
+{{< include _awash-setup.qmd  >}}
+
+
+## Computational Thinking
+
+::: {.callout-caution}
+## You're here early!
+
+We will officially release this page in July 2024, when the article about 
+computational thinking comes out in the AMEJ.
+
+But you've gone to the trouble of finding this page, 
+we might as well let you see where we are!
+:::
+
+Computational thinking is the last and, in many ways, 
+the most complex of our four topics. 
+
+[The v9.0 curriculum materials](https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics) list 
+several components:
+
+* decomposition,
+* abstraction,
+* pattern recognition,
+* use of models amd simulations,
+* algorithms, and
+* generalisation.
+
+To me, these sound like "problem solving," and that's not wrong.
+It's also true that "computational thinking" does not require digital technologies. 
+
+That said, however, v9.0 does have a decided tilt towards the digital
+in order to prepare students for a world where that digital technology is so important.
+The same can be said for data, as implied in the [introduction](index.qmd).
+
+We also mentioned there that our big topics overlap.
+So the [probability](probability.qmd) page with its roulette example
+also addresses computational thinking through the "models and simulation"
+channel.
+If a student created such a simulation om their own in order to
+answer the questions we had on that page,
+we would be thrilled, 
+and it would be clear evidence of that student's computational thinking.
+
+Thus you have already seen at least one example.
+Let's make another one, an example redolent with digital technology
+and algorithmic thinking.
+
+Let's have students code. 
+
+### Coding in CODAP?
+
+Yes!
+
+There is a plugin, `simmer`, that lets students use block programming
+techniques (similar to [Scratch](https://scratch.mit.edu/)) 
+to create probability simulations.
+
+In the live example below, press the green "play" triangle
+to run the program. 
+The program "emits" a data value into a CODAP table.
+Run it again to get more data.
+Make a graph of `die1`.
+Make sure you see how the program works, 
+and why it's a simulation of rolling a regular 6-sided die.
+
+Experiment with the blocks you have 
+and the ones hidden in the toolbox on the left.
+Change the program so that it...
+
+* Repeats 50 times with a single click.
+* Creates data for two six-sided dice.
+Collect data and make a convincing graph that seven is the most likey sum. 
+* Creates a distribution of random values from the sum of two dice,
+but where the average value of the sum is zero.
+
+::: {.column-page-right}
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html?di=https://codap.xyz/plugins/simmer/#shared=https%3A%2F%2Fcfm-shared.concord.org%2F3jZjGsd5AnVW0JwICzUQ%2Ffile.json";
+    awash.liveDemoAt(theURL);
+</script>
+:::

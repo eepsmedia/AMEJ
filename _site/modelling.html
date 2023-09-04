@@ -155,20 +155,30 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="modelling-page">Mathematical modelling</h2>
 <p>Modelling is a vast topic. There are many forms of mathematical modelling: we make systems models, conceptual models, and probability models; we construct simulations to model phenomena. The list goes on.</p>
 <p>Right now, let’s look at another kind of model central to school mathematics: using a mathematical function to approximate data from some phenomenon.</p>
-<p><img src="art/beads-photo.png" class="img-fluid"></p>
-<p>Here’s what we do:</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="art/beads-on-scale.png" class="img-fluid" style="width:90.0%"></p>
+</div></div><p>Here’s what we do:</p>
 <ul>
 <li>Reach into a container of glass beads and pull out a few, up to about 20.</li>
 <li>Count the beads and record the number.</li>
-<li>Put the beads in a bowl and weigh them. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Put the beads in a bowl and weigh them.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 <li>Enter the <code>count</code> and the <code>weight</code> into a CODAP table.</li>
-<li>Put the beads back, mix, and repeat.</li>
+<li>Put the beads back into the container and repeat.</li>
 </ul>
 <p>Then, of course, we will plot the data (what goes on the horizontal axis??) and try to find a function that fits the data.</p>
-<p>You already know how to make a graph. To make a line, go to the ruler palette of the graph and choose <code>Movable Line</code>. Drag its handles to approximate the data. Notice how the slope-intercept form of the line appears <em>and updates</em> as you drag.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="art/ruler-palette-movable-line.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">The ruler palette is attached to the graph.</figcaption><p></p>
+</figure>
+</div>
+</div></div><p>You already know <a href="./basics.html">how to make a graph</a>. To make a line, go to the ruler palette of the graph and choose <code>Movable Line</code>. Drag its handles to approximate the data. Notice how the slope-intercept form of the line appears <em>and updates</em> as you drag.</p>
 <div class="column-page-right">
 <script>
-    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2Fc0WthQUBDM9AxUqbLNMT%2Ffile.json";
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json";
     awash.liveDemoAt(theURL);
 </script>
 </div>
@@ -185,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="art/beads-graph.png" class="img-fluid figure-img"></p>
+<p><img src="art/good-fit.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">One possible line</figcaption><p></p>
 </figure>
 </div>
@@ -194,6 +204,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Remember that number you got for 1 kg of beads? How precise is that? What <em>range</em> of numbers do you think you would typically get?</li>
 <li>Looking at the formula in the figure, do you think it’s possible that the true formula is <code>weight = 2 * count + 100</code>?</li>
 </ul>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Need more screen space?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Working inside this site can be constraining. To use this CODAP file “normally,” in your browser, <a href="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json">use this link</a>.</p>
+</div>
+</div>
 <section id="more-commentary" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="more-commentary">More commentary</h3>
 <p><strong>Functional form</strong>. We deliberately used a linear example, but you can go deeper. That ruler palette has a <code>Plotted Function</code> option, and you can use sliders (from the toolbar) to make variable parameters.</p>
