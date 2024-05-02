@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CODAP for Australians – modelling</title>
+<title>CODAP for Australians – computational-thinking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./stats.html" rel="next">
-<link href="./basics.html" rel="prev">
+<link href="./about.html" rel="next">
+<link href="./300-probability.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating slimcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -101,27 +101,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link">CODAP basics</a>
+  <a href="./050-basics.html" class="sidebar-item-text sidebar-link">CODAP basics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modelling.html" class="sidebar-item-text sidebar-link active">Modelling</a>
+  <a href="./100-modelling.html" class="sidebar-item-text sidebar-link">Modelling</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./stats.html" class="sidebar-item-text sidebar-link">Statistics</a>
+  <a href="./210-stats.html" class="sidebar-item-text sidebar-link">Statistics • EDA</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./probability.html" class="sidebar-item-text sidebar-link">Probability</a>
+  <a href="./220-stats-inference1.html" class="sidebar-item-text sidebar-link">Statistics • Inference</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computational-thinking.html" class="sidebar-item-text sidebar-link">Computational thinking</a>
+  <a href="./230-stats-pulse.html" class="sidebar-item-text sidebar-link">Statistics • Pulse</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./300-probability.html" class="sidebar-item-text sidebar-link">Probability</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./400-computational-thinking.html" class="sidebar-item-text sidebar-link active">Computational thinking</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -138,9 +148,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#modelling-page" id="toc-modelling-page" class="nav-link active" data-scroll-target="#modelling-page">Mathematical modelling</a>
+  <li><a href="#computational-thinking" id="toc-computational-thinking" class="nav-link active" data-scroll-target="#computational-thinking">Computational Thinking</a>
   <ul class="collapse">
-  <li><a href="#more-commentary" id="toc-more-commentary" class="nav-link" data-scroll-target="#more-commentary">More commentary</a></li>
+  <li><a href="#coding-in-codap" id="toc-coding-in-codap" class="nav-link" data-scroll-target="#coding-in-codap">Coding in CODAP?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -151,98 +161,60 @@ ul.task-list li input[type="checkbox"] {
 
 
     <script src="src/awash-functions.js"></script>
-<section id="modelling-page" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="modelling-page">Mathematical modelling</h2>
-<p>Modelling is a vast topic. There are many forms of mathematical modelling: we make systems models, conceptual models, and probability models; we construct simulations to model phenomena. The list goes on.</p>
-<p>Right now, let’s look at another kind of model central to school mathematics: using a mathematical function to approximate data from some phenomenon.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p><img src="art/beads-on-scale.png" class="img-fluid" style="width:90.0%"></p>
-</div></div><p>Here’s what we do:</p>
-<ul>
-<li>Reach into a container of glass beads and pull out a few, up to about 20.</li>
-<li>Count the beads and record the number.</li>
-<li>Put the beads in a bowl and weigh them.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-<li>Enter the <code>count</code> and the <code>weight</code> into a CODAP table.</li>
-<li>Put the beads back into the container and repeat.</li>
-</ul>
-<p>Then, of course, we will plot the data (what goes on the horizontal axis??) and try to find a function that fits the data.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="art/ruler-palette-movable-line.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">The ruler palette is attached to the graph.</figcaption><p></p>
-</figure>
-</div>
-</div></div><p>You already know <a href="./basics.html">how to make a graph</a>. To make a line, go to the ruler palette of the graph and choose <code>Movable Line</code>. Drag its handles to approximate the data. Notice how the slope-intercept form of the line appears <em>and updates</em> as you drag.</p>
-<div class="column-page-right">
-<script>
-    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json";
-    awash.liveDemoAt(theURL);
-</script>
-</div>
-<p>A situation like this leads to some great questions such as:</p>
-<ul>
-<li>Suppose we put 100 beads in the bowl. How much would that weigh?</li>
-<li>Suppose the bowl with the beads weighed 1 kg. How many beads would that be?</li>
-<li>In the formula you got, what number is the slope?</li>
-<li>What does that slope <em>mean</em>?</li>
-<li>Same for the intercept…</li>
-</ul>
-<p>These lead to more subtle and statistical questions…</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="art/good-fit.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">One possible line</figcaption><p></p>
-</figure>
-</div>
-</div></div><ul>
-<li>Why don’t the points line up perfectly?</li>
-<li>Remember that number you got for 1 kg of beads? How precise is that? What <em>range</em> of numbers do you think you would typically get?</li>
-<li>Looking at the formula in the figure, do you think it’s possible that the true formula is <code>weight = 2 * count + 100</code>?</li>
-</ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<section id="computational-thinking" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="computational-thinking">Computational Thinking</h2>
+<div class="callout-caution callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Need more screen space?
+You’re here early!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Working inside this site can be constraining. To use this CODAP file “normally,” in your browser, <a href="https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json">use this link</a>.</p>
+<p>We will officially release this page in July 2024, when the article about computational thinking comes out in the AMEJ.</p>
+<p>But you’ve gone to the trouble of finding this page, we might as well let you see where we are!</p>
 </div>
 </div>
-<section id="more-commentary" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="more-commentary">More commentary</h3>
-<p><strong>Functional form</strong>. We deliberately used a linear example, but you can go deeper. That ruler palette has a <code>Plotted Function</code> option, and you can use sliders (from the toolbar) to make variable parameters.</p>
-<p><strong>Data sources</strong>. Here we used measurement data, which has built-in variability. That’s great, but it’s not the only way. Imagine one of those pattern problems where you count squares or triangles or dots. You could enter those numbers as data and plot them to find the (in this case, quadratic) function:</p>
-<p><img src="art/dot-pattern.png" class="img-fluid"></p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="art/modelling-layers-parabola.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A quadratic model using the <code>Plotted Function</code> feature</figcaption><p></p>
-</figure>
+<p>Computational thinking is the last and, in many ways, the most complex of our four topics.</p>
+<p><a href="https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics">The v9.0 curriculum materials</a> list several components:</p>
+<ul>
+<li>decomposition,</li>
+<li>abstraction,</li>
+<li>pattern recognition,</li>
+<li>use of models amd simulations,</li>
+<li>algorithms, and</li>
+<li>generalisation.</li>
+</ul>
+<p>To me, these sound like “problem solving,” and that’s not wrong. It’s also true that “computational thinking” does not require digital technologies.</p>
+<p>That said, however, v9.0 does have a decided tilt towards the digital in order to prepare students for a world where that digital technology is so important. The same can be said for data, as implied in the <a href="./index.html">introduction</a>.</p>
+<p>We also mentioned there that our big topics overlap. So the <a href="./300-probability.html">probability</a> page with its roulette example also addresses computational thinking through the “models and simulation” channel. If a student created such a simulation om their own in order to answer the questions we had on that page, we would be thrilled, and it would be clear evidence of that student’s computational thinking.</p>
+<p>Thus you have already seen at least one example. Let’s make another one, an example redolent with digital technology and algorithmic thinking.</p>
+<p>Let’s have students code.</p>
+<section id="coding-in-codap" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="coding-in-codap">Coding in CODAP?</h3>
+<p>Yes!</p>
+<p>There is a plugin, <code>simmer</code>, that lets students use block programming techniques (similar to <a href="https://scratch.mit.edu/">Scratch</a>) to create probability simulations.</p>
+<p>In the live example below, press the green “play” triangle to run the program. The program “emits” a data value into a CODAP table. Run it again to get more data. Make a graph of <code>die1</code>. Make sure you see how the program works, and why it’s a simulation of rolling a regular 6-sided die.</p>
+<p>Experiment with the blocks you have and the ones hidden in the toolbox on the left. Change the program so that it…</p>
+<ul>
+<li>Repeats 50 times with a single click.</li>
+<li>Creates data for two six-sided dice. Collect data and make a convincing graph that seven is the most likey sum.</li>
+<li>Creates a distribution of random values from the sum of two dice, but where the average value of the sum is zero.</li>
+</ul>
+<div class="column-page-right">
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html?di=https://codap.xyz/plugins/simmer/#shared=https%3A%2F%2Fcfm-shared.concord.org%2F3jZjGsd5AnVW0JwICzUQ%2Ffile.json";
+    awash.liveDemoAt(theURL);
+</script>
 </div>
-</div></div><p><strong>Best fit</strong>. The ruler palette will let you make a least-squares line. Before you do that, however consider: the least-squares line is not all that much better than what students will come up with using the movable line. Furthermore, think of what students might gain by moving those handles and seeing the formula change.</p>
 
 
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Note: do not “tare” the scale. The weight will be the bowl plus the beads. Do not alert the students to this!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -378,13 +350,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./basics.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">CODAP basics</span>
+      <a href="./300-probability.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Probability</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./stats.html" class="pagination-link">
-        <span class="nav-page-text">Statistics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./about.html" class="pagination-link">
+        <span class="nav-page-text">About</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

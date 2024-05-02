@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CODAP for Australians – stats</title>
+<title>CODAP for Australians – stats-inference1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./probability.html" rel="next">
-<link href="./modelling.html" rel="prev">
+<link href="./230-stats-pulse.html" rel="next">
+<link href="./210-stats.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -102,27 +102,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link">CODAP basics</a>
+  <a href="./050-basics.html" class="sidebar-item-text sidebar-link">CODAP basics</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modelling.html" class="sidebar-item-text sidebar-link">Modelling</a>
+  <a href="./100-modelling.html" class="sidebar-item-text sidebar-link">Modelling</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./stats.html" class="sidebar-item-text sidebar-link active">Statistics</a>
+  <a href="./210-stats.html" class="sidebar-item-text sidebar-link">Statistics • EDA</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./probability.html" class="sidebar-item-text sidebar-link">Probability</a>
+  <a href="./220-stats-inference1.html" class="sidebar-item-text sidebar-link active">Statistics • Inference</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./computational-thinking.html" class="sidebar-item-text sidebar-link">Computational thinking</a>
+  <a href="./230-stats-pulse.html" class="sidebar-item-text sidebar-link">Statistics • Pulse</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./300-probability.html" class="sidebar-item-text sidebar-link">Probability</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./400-computational-thinking.html" class="sidebar-item-text sidebar-link">Computational thinking</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -139,7 +149,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#statistical-investigation" id="toc-statistical-investigation" class="nav-link active" data-scroll-target="#statistical-investigation">Statistical investigation</a></li>
+  <li><a href="#from-eda-to-inference" id="toc-from-eda-to-inference" class="nav-link active" data-scroll-target="#from-eda-to-inference">From EDA to inference</a></li>
+  <li><a href="#infeernce-at-last" id="toc-infeernce-at-last" class="nav-link" data-scroll-target="#infeernce-at-last">Infeernce at last!</a></li>
   </ul>
 </nav>
     </div>
@@ -149,23 +160,11 @@ ul.task-list li input[type="checkbox"] {
 
 
     <script src="src/awash-functions.js"></script>
-<section id="statistical-investigation" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="statistical-investigation">Statistical investigation</h2>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-You’re here early!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We will officially release this page in December 2023, when the article about statistical thinking comes out in the AMEJ.</p>
-<p>But you’ve gone to the trouble of finding this page, we might as well let you see where we are!</p>
-</div>
-</div>
-<p>CODAP is a data analysis platform, so we expect it to help with statitical investigations. Here is a relatively simple example.</p>
+<section id="from-eda-to-inference" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="from-eda-to-inference">From EDA to inference</h2>
+<p>In the article in the AMEJ, we gave an example looking at pulse data from students and teachers. We used a way cool technique called a randomization test in which we scrambled data values to make the null hypothesis true.</p>
+<p>We’ll let you work with that data in a bit, and reproduce what we did in the journal. But first, let’s walk a slightly different path with similar data.</p>
+<p>We’ll begin just doing more exploratory data analysis (EDA).</p>
 <p>Suppose we’re interested in gender differences in height, and remember that at about ages 10–12, girls are generally taller than boys.</p>
 <p>Is that really true?</p>
 <p>We collect data on some ten-year-olds and plot the results, as you can see in the graph in the live example below. The blue lines are the mean heights of the groups; you can “hover” over the lines to see the values.</p>
@@ -190,7 +189,7 @@ You’re here early!
 <p>All of that lives in the realm of exploratory data analysis.</p>
 <p>More advanced students can explore whether the difference we see could plausibly be due to chance. Although we could do a formal <span class="math inline">\(t\)</span>-test…</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -199,13 +198,16 @@ A formal <span class="math inline">\(t\)</span>-test (click to expand)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><img src="art/stats-t.png" class="img-fluid" style="width:100.0%"></p>
 </div>
 </div>
 </div>
 <p>…many stats educators are turning instead to randomization-based inference.</p>
+</section>
+<section id="infeernce-at-last" class="level2">
+<h2 class="anchored" data-anchor-id="infeernce-at-last">Infeernce at last!</h2>
 <p>Feeling brave? Try this:</p>
 <ul>
 <li>Open the <code>scrambler</code> item by clicking the minus-sign that appears when you hover over it. We have already set it up for you.</li>
@@ -370,13 +372,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./modelling.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Modelling</span>
+      <a href="./210-stats.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Statistics • EDA</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./probability.html" class="pagination-link">
-        <span class="nav-page-text">Probability</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./230-stats-pulse.html" class="pagination-link">
+        <span class="nav-page-text">Statistics • Pulse</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

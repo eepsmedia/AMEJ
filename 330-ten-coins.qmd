@@ -1,0 +1,39 @@
+{{< include _awash-setup.qmd  >}}
+
+### Flipping ten coins, 400 times
+
+This page lets you play with the CODAP file
+we used to create the final examples in the paper.
+You will see the **Binomial Simulator**, a table, and a graph, 
+which we used to make Figure 5.
+
+Here, we will make Figure 6!
+That is, we want to explore the probability of getting 5 girls 
+in a family with 5 children.
+
+[Back to the main probability page](300-probability.qmd)
+
+Here are things to do and play with:
+
+* Change the vocabulary to talk about children and families.
+  * Change the basic event to **child**.
+  * Change the possible result of one child to **girl**.
+  * Change the alternative to **boy**.
+  * And a set of 10 children is a **family**.
+
+* In the settings, 
+  * Ensure that the probability of a **girl** is **1/2**.
+  * Change the number of children in a family to **5**.
+
+* Finally, press **Engage**. 
+Because you changed the vocabulary, the entire dataset about coins gets erased.
+
+::: {.column-page-right}
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html?di=https://codap.xyz/plugins/binomial/#shared=https%3A%2F%2Fcfm-shared.concord.org%2FRVlTwCLmfOGRy7JYHb0I%2Ffile.json";
+    awash.liveDemoAt(theURL);
+</script>
+:::
+
+* Make a fresh graph (perhaps deleting the old one) and drag `girl` to the horizontal axis. You'll see the distribution of number of girls. Notice how short "5" is.
+* This will make  nicer graph: 

@@ -1,0 +1,34 @@
+{{< include _awash-setup.qmd  >}}
+
+### Rolling dice, 30 or 1200 times
+
+This page lets you play with the CODAP file
+we used to create the first examples in the paper.
+The first table is set up to roll dice 30 times;
+the second one rolls 1200 times. 
+
+[Back to the main probability page](300-probability.qmd)
+
+Here are things to do and play with:
+
+* Click on a table and then on the "ruler" menu that appears on the right.
+Choose **Rerandomize all**. 
+That will re-roll the dice and, of course, re-plot the graphs.
+Notice how the "30" graphs change a lot more than the "1200" graphs.
+
+* Make graphs of the `sum` of the dice. 
+Do you get the triangular shape you're "supposed to" get?
+
+* Look at an 
+[old blog post](https://bestcase.wordpress.com/2011/01/08/an-empirical-approach-to-dice-probability/) 
+of mine that describes a lesson
+about the sum of two dice.
+That was in the days when we used Fathom.
+Do the activities using this page in CODAP!
+
+::: {.column-page-right}
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FkSLRJ6RGRRLUD0FR7Ln6%2Ffile.json";
+    awash.liveDemoAt(theURL);
+</script>
+:::

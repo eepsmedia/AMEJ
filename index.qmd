@@ -52,7 +52,7 @@ you can "read ahead" if you are interested.
 
 | AMEJ issue | topic |
 |----|----|
-| September 2023 | Modelling |
-| December 2023 | Statistics |
-| March 2024 | Probability |
-| July 2024 | Computational thinking |
+| January 2024 | Modelling |
+| May 2024? | Statistics |
+| July 2024? | Probability |
+| September 2024? | Computational thinking |

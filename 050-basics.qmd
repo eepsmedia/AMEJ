@@ -68,3 +68,47 @@ More importantly, think about what other questions
 students can address as they explore,
 and what other ways you might connect mathematics through data.
 The side headings on the left lead you to some brief ideas.
+
+### Nitty gritty and resources
+
+I am trying, in this site, not to overwhelm you with background.
+My philosophy is to help you acyually do things as soon as possible.
+As a result, you will have questions that don't get answered.
+Here are some of them...
+
+Who makes CODAP?
+: The [Concord Consortium](https://www.concord.org){target='_blank'}.
+They develop great materials, mostly in maths and science.
+They are located in Concord, Massachusetts in the USA, 
+and have a satellite office in California.
+On their site, they also have a
+[home page for CODAP](https://codap.concord.org){target='_blank'}
+that links to good resources.
+
+Is it really free?
+: Yes. There is not even a way to add on something that costs money. 
+All of the plugins are open-source and free.
+
+How many data points can CODAP handle?
+: There is no set limit, but for most practical purposes, in 2023,
+five thousand cases is a reasonable limit. 
+The elves at Concord are working to improve CODAP ("version 3"),
+and that will probably increase that limit...but they do not 
+tell anyone when that's likely to happen.
+
+I remember Fathom, Is CODAP like that?
+: Yes. CODAP is Fathom's granddaughter, and therefore also 
+related to TinkerPlots. 
+
+How do I rescale axes?
+: Drag the numbers on the axes themselves, you'll figure it out. 
+But more importantly, learn any basic CODAP skill by using the Help system.
+
+Where else can I learn more?
+: Tooting my own horn, I suggest [Awash in Data](https://codap.xyz/awash/){target='_blank'}.
+I used it with US high school students as an introduction
+to data science. 
+It also includes a lot of information on CODAP features,
+including how to do teacherly things such as setting up
+documents for students to use. 
+

@@ -8,14 +8,14 @@ we make systems models, conceptual models, and probability models;
 we construct simulations to model phenomena. 
 The list goes on. 
 
+::: {.column-margin}
+![](art/beads-on-scale.png){width="90%"}
+:::
+
 Right now, let's look at another kind of model 
 central to school mathematics:
 using a mathematical function to approximate data
 from some phenomenon.
-
-::: {.column-margin}
-![](art/beads-on-scale.png){width="90%"}
-:::
 
 
 Here's what we do:
@@ -24,10 +24,11 @@ Here's what we do:
 up to about 20.
 * Count the beads and record the number.
 * Put the beads in a bowl and weigh them.^[Note: do not "tare" the scale.
-The weight will be the bowl plus the beads.
+The mass will be of the bowl plus the beads.
 Do not alert the students to this!]
-* Enter the `count` and the `weight` into a CODAP table. 
+* Enter the `count` and the `mass` into a CODAP table. 
 * Put the beads back into the container and repeat.
+
 
 Then, of course, we will plot the data
 (what goes on the horizontal axis??) and try to 
@@ -37,7 +38,8 @@ find a function that fits the data.
 ![The ruler palette is attached to the graph.](art/ruler-palette-movable-line.png){width="50%"}
 :::
 
-You already know [how to make a graph](basics.qmd).
+
+You already know [how to make a graph](050-basics.qmd).
 To make a line,
 go to the ruler palette of the graph and choose `Movable Line`.
 Drag its handles to approximate the data.
@@ -47,15 +49,15 @@ appears _and updates_ as you drag.
 
 ::: {.column-page-right}
 <script>
-    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json";
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FQlXPoFoFsrzmRGJ1h8YF%2Ffile.json";
     awash.liveDemoAt(theURL);
 </script>
 :::
 
 A situation like this leads to some great questions such as:
 
-* Suppose we put 100 beads in the bowl. How much would that weigh?
-* Suppose the bowl with the beads weighed 1 kg. 
+* Suppose we put 100 beads in the bowl. What would the mass be?
+* Suppose the bowl with the beads had a mass of 1 kg. 
 How many beads would that be?
 * In the formula you got, what number is the slope?
 * What does that slope _mean_?
@@ -64,21 +66,21 @@ How many beads would that be?
 These lead to more subtle and statistical questions...
 
 ::: {.column-margin}
-![One possible line](art/good-fit.png)
+![One possible line](art/modelling%20good%20fit.png)
 :::
 
 
 * Why don't the points line up perfectly?
 * Remember that number you got for 1 kg of beads? How precise is that? What _range_ of numbers do you think you would typically get?
 * Looking at the formula in the figure, do you think
-it's possible that the true formula is `weight = 2 * count + 100`?
+it's possible that the true formula is `mass = 2 * count + 100`?
 
 :::{.callout-tip}
 ## Need more screen space?
 
 Working inside this site can be constraining. 
 To see this CODAP file "normally," in your browser,
-[use this link](https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FmNGEjBMnqPPPtTiEQeJh%2Ffile.json){target="_blank"}.
+[use this link](https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FQlXPoFoFsrzmRGJ1h8YF%2Ffile.json){target="_blank"}.
 :::
 ### More commentary
 

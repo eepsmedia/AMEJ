@@ -3,25 +3,41 @@ project:
   resources:
     - "/art/"
 
+
+#  reference-location: margin
+#  citation-location: margin
+
 website:
   title: "CODAP for Australians"
   page-navigation: true
 
   sidebar:
+    collapse-level : 1
     style: "floating"
     search: true
     contents:
       - href: index.qmd
         text: Introduction
-      - href: basics.qmd
+      - href: 050-basics.qmd
         text: CODAP basics
-      - href: modelling.qmd
+      - href: 100-modelling.qmd
         text: Modelling
-      - href: stats.qmd
-        text: Statistics
-      - href: probability.qmd
+      - href: 210-stats.qmd
+        text: Statistics • EDA
+      - href: 220-stats-inference1.qmd
+        text: Statistics • Inference
+      - href: 230-stats-pulse.qmd
+        text: Statistics • Pulse
+      - href: 300-probability.qmd
         text: Probability
-      - href: computational-thinking.qmd
+      - chapters : 
+          - href: 310-prob-dice-30-1200.qmd
+            text: Probability • dice
+          - href: 320-two-coins-1000.qmd
+            text: Probability • two coins
+          - href: 330-ten-coins.qmd
+            text: Probability • ten coins
+      - href: 400-computational-thinking.qmd
         text: Computational thinking
       - about.qmd
 
@@ -30,6 +46,3 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-

@@ -1,0 +1,37 @@
+{{< include _awash-setup.qmd  >}}
+
+### Flipping two coins, 1000 times
+
+This page lets you play with the CODAP file
+we used to create the second examples in the paper.
+You will see a table and two graphs, 
+which we used to make Figure 4.
+
+[Back to the main probability page](300-probability.qmd)
+
+Here are things to do and play with:
+
+* Drag a rectangle around the pile of points above `nHeads` = 1, 
+the tall pile in the left-hand graph. 
+See how the selection shows up in the right-hand graph.
+
+* Drag `nheads` from the table and drop it in the _middle_ of the right-hand graph. 
+(If you have points selected, click somewhere to deselect them.)
+The points will color to show the value of `nHeads`.
+
+  * This is unsatisfying because the contrast is not good. 
+  Let's make `nHeads` _categorical_.
+  * Click on `nHeads` at the bottom of the graph and choose 
+  **Treat as Categorical** from the bottom of the menu.
+  * Consider if this is a better way to show that there are two ways to make `nHeads` = 1.
+
+* Study the formulas for  `coin1`, `coin2`, and `nHeads`.
+Use your new knowledge to add a third coin to the simulation. 
+Figure out a good way to make graphs that demonstrate the various probabilities!
+
+::: {.column-page-right}
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FuRZbKwpiSjoWdyQc4CqN%2Ffile.json";
+    awash.liveDemoAt(theURL);
+</script>
+:::

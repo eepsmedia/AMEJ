@@ -1,20 +1,16 @@
 {{< include _awash-setup.qmd  >}}
 
-## Statistical investigation
+## From EDA to inference
 
-::: {.callout-caution}
-## You're here early!
+In the article in the AMEJ,
+we gave an example looking at pulse data from students and teachers. 
+We used a way cool technique called a randomization test in which we
+scrambled data values to make the null hypothesis true.
 
-We will officially release this page in December 2023, when the article about 
-statistical thinking comes out in the AMEJ.
+We'll let you work with that data in a bit, and reproduce what we did in the journal.
+But first, let's walk a slightly different path with similar data.
 
-But you've gone to the trouble of finding this page, 
-we might as well let you see where we are!
-:::
-
-CODAP is a data analysis platform, 
-so we expect it to help with statitical investigations. 
-Here is a relatively simple example.
+We'll begin just doing more exploratory data analysis (EDA).
 
 Suppose we're interested in gender differences in height, 
 and remember that at about ages 10–12, 
@@ -77,6 +73,8 @@ Although we could do a formal $t$-test...
 ...many stats educators are turning instead to 
 randomization-based inference. 
 
+## Infeernce at last!
+
 Feeling brave? Try this:
 
 * Open the `scrambler` item by clicking the minus-sign that appears 
@@ -109,3 +107,4 @@ to be implausible?
 A takeaway, we hope, is that CODAP gives you a tool and an environment
 that can serve students from the very first bit of EDA 
 all the way through formal inference. 
+

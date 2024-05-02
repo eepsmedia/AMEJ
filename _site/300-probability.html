@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CODAP for Australians</title>
+<title>CODAP for Australians – probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./050-basics.html" rel="next">
+<link href="./400-computational-thinking.html" rel="next">
+<link href="./230-stats-pulse.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,11 +61,12 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -125,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./300-probability.html" class="sidebar-item-text sidebar-link">Probability</a>
+  <a href="./300-probability.html" class="sidebar-item-text sidebar-link active">Probability</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -147,60 +149,118 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#codap-for-australians-an-introduction" id="toc-codap-for-australians-an-introduction" class="nav-link active" data-scroll-target="#codap-for-australians-an-introduction">CODAP for Australians: an introduction</a></li>
+  <li><a href="#probability-experiments-and-simulations" id="toc-probability-experiments-and-simulations" class="nav-link active" data-scroll-target="#probability-experiments-and-simulations">Probability Experiments and Simulations</a>
+  <ul class="collapse">
+  <li><a href="#examples-from-the-journal-article" id="toc-examples-from-the-journal-article" class="nav-link" data-scroll-target="#examples-from-the-journal-article">Examples from the journal article</a></li>
+  <li><a href="#something-fun-and-different-roulette" id="toc-something-fun-and-different-roulette" class="nav-link" data-scroll-target="#something-fun-and-different-roulette">Something fun and different: Roulette!</a></li>
+  <li><a href="#more-commentary" id="toc-more-commentary" class="nav-link" data-scroll-target="#more-commentary">More commentary</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 
     <script src="src/awash-functions.js"></script>
-<section id="codap-for-australians-an-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="codap-for-australians-an-introduction">CODAP for Australians: an introduction</h2>
-<p>Version 9.0 of the <a href="https://v9.australiancurriculum.edu.au/" target="_blank">Australian Curriculum</a> is an exciting document. The <a href="https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics" target="_blank">Mathematics</a> and <a href="https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/technologies" target="_blank">Digital Technology</a> sections open doors for Australian teachers, suggesting new directions and possiblities.</p>
-<p>The new-ish bits are often related to technology and/or data. Computers—or computational thinking—are taking a more prominent role in society and, correspondingly, in mathematics education. And the prominence of data in today’s world leads us to continue to emphasize statistics, data analysis, and probability as important parts of every student’s maths upbringing.</p>
-<p>Making that work in the classroom requires flexible (and inexpensive) tools.</p>
-<p>To that end, this site introduces the Common Online Data Analysis Platform (CODAP), an open-source, web-based tool designed for schools. Amazingly, CODAP is free. You (or your students) don’t even need to sign up to use it.</p>
-<p>CODAP has many, many capabilities. This site will only get you started. During 2023 and 2024, in a series of articles in the <a href="https://aamt.edu.au/teachers/journals/aamt-journals/" target="_blank">AMEJ</a>, we will look at a few different possible uses of CODAP, highlighting “mathematical processes” from Version Nine:</p>
+<section id="probability-experiments-and-simulations" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="probability-experiments-and-simulations">Probability Experiments and Simulations</h2>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+You’re here early!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We will officially release this page in May 2024, when the article about probability and simulation comes out in the AMEJ.</p>
+<p>But you’ve gone to the trouble of finding this page, we might as well let you see where we are!</p>
+</div>
+</div>
+<section id="examples-from-the-journal-article" class="level3">
+<h3 class="anchored" data-anchor-id="examples-from-the-journal-article">Examples from the journal article</h3>
 <ul>
-<li>Mathematical modelling</li>
-<li>Statistical investigation</li>
-<li>Probability experiments and simulation</li>
-<li>Computational thinking</li>
+<li><a href="./310-prob-dice-30-1200.html">Rolling dice</a></li>
+<li><a href="./320-two-coins-1000.html">Flipping two coins</a></li>
+<li><a href="./330-ten-coins.html">Flipping ten coins</a></li>
 </ul>
-<p>We will not pretend that these are classroom-ready lessons, but they might whet your appetite for more, and encourage you to find—and create!—lessons you can use as you move forward.</p>
-<p>See the links on the left? Begin with <code>CODAP basics</code> and then move on to other topics.</p>
-<p>The topics officially appear according to the schedule below. But we have prepared draft examples in advance so that you can “read ahead” if you are interested.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>AMEJ issue</th>
-<th>topic</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>January 2024</td>
-<td>Modelling</td>
-</tr>
-<tr class="even">
-<td>May 2024?</td>
-<td>Statistics</td>
-</tr>
-<tr class="odd">
-<td>July 2024?</td>
-<td>Probability</td>
-</tr>
-<tr class="even">
-<td>September 2024?</td>
-<td>Computational thinking</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="something-fun-and-different-roulette" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="something-fun-and-different-roulette">Something fun and different: Roulette!</h3>
+<p>On the <a href="./100-modelling.html">Modelling</a> page, we used a function to approximate some measurements. Let’s look at another kind of model, a simulation that includes randomness.</p>
+<p>We will model a <em>process</em>, in this case, the experience of playing roulette. To simplify things, we will always bet $1 on red. If red comes up, we get our $1 back plus $1 more. If it does not come up, we lose our $1.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="art/prob-roulette-wheel.png" class="img-fluid" style="width:60.0%"></p>
+</div></div><p>Now: on our roulette wheel, there are 38 slots, of which 18—less than half—are red. So even before we simulate, we admit that the “house” has an advantage. We could even compute the expected value of a single play, which will be less than zero.</p>
+<p>But the expected value is not our question today. We want to know our chances of coming out ahead if we play 50 times. To figure that out theoretically is a bit more complicated than we want to tackle, so we’ll use the computer to play the game many times and record the results.</p>
+<p>We will use a CODAP “plugin” called the Binomial Simulator. When you first load it, it looks like the one in the live example below. As you can see, it’s set up to do a coin experiment.</p>
+<p>The cool thing in this plugin is that it’s all about the language. We will change the words (and some of the numbers) so that the paragraph at the top reads the way we want it. The we will press <code>Engage!</code> and CODAP will run the simulation.</p>
+<p>The paragraph we want is this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="art/prob-simulator-paragraph.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Change the text and numbers in the simulator so that your paragraph matches that one.</p>
+<p>Then press <code>Engage!</code>. A CODAP table will appear with the number of <code>red</code> and the number of <code>not red</code> for each of the 100 sessions you simulated.</p>
+<div class="column-page-right">
+<script>
+    theURL = "https://codap.concord.org/releases/latest/static/dg/en/cert/index.html?di=https://codap.xyz/plugins/binomial/";
+    awash.liveDemoAt(theURL);
+</script>
+</div>
+<p>We want to know how much we won. That is the quantity <code>red - not red</code>. Let’s make a new column to calculate it.</p>
+<p>In the upper right of the table, there is a gray circle with a plus sign. Click that to make a new column.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="art/prob-new-attribute-button.png" class="img-fluid"></p>
+</div></div><p>First, you’ll give it a name; let’s call it <code>net</code>.</p>
+<p>Then click on the (underlined) name <code>net</code> to get a menu. Choose <code>Edit Formula</code>.</p>
+<p>In the box, type <code>red</code> and a minus sign and then start typing <code>not</code>. CODAP will give you “not red” as an option; take it. You’ll see that (because of the space) CODAP surrounds the name <code>'not red'</code> with ticks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="art/prob-formula.png" class="img-fluid figure-img" style="width:40.0%"></p>
+</figure>
+</div>
+<p>After you click <code>Apply</code>, the <code>net</code> column fills with numbers: the net winnings during each session.</p>
+<p>Graph <code>net</code>. How many times (out of 100) is your value for <code>net</code> greater than zero?</p>
+<p>I don’t want to count them either. Here’s what to do:</p>
+<ul>
+<li>In the ruler palette, click <code>Movable Value</code> and choose <code>Add</code>. A line appears that you can move back and forth.</li>
+<li>Now go back to the ruler palette and choose <code>Count</code>. Aha! Now you can see how many are on each side of the line. Position it just above zero to get the answer. We had 35 winners out of 100 sessions:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="art/prob-roulette-results.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>Of course, different students will get different results, but two things should be clear:</p>
+<ul>
+<li>If we imagine that this represents 100 gamblers, fewer than half of them come out ahead.</li>
+<li>By the same token, quite a few of them do. And they will be the ones that tell their friends how great it was to go gambling.</li>
+</ul>
+</section>
+<section id="more-commentary" class="level3">
+<h3 class="anchored" data-anchor-id="more-commentary">More commentary</h3>
+<p><strong>Even Results</strong>. All values of <code>net</code> are even. Why?</p>
+<p><strong>Why Binomial</strong>? We’re using the Binomial Simulator because this particular situation is in fact binomial: the probability of winning each spin (18/38) is constant, and is independent of the success or failure of any other spin of the wheel.</p>
+<p>Plenty of other problems are <em>not</em> binomial (for example, the probability of drawing three aces in five cards) and they require different simulation tools.</p>
+<p>A lot of problems are binomial, though, so using this Binomial Simulator gives you an interesting, relatively simple entry into simulation. Want to see other binomial problems? Check out <a href="https://codap.xyz/awash/07.10-binomial.html">this chapter in the online book, <em>Awash in Data</em></a>.</p>
+<p><strong>Expected Value</strong>. The expected value for one spin will be</p>
+<p><span class="math display">\[E = \frac{18}{38} - \frac{20}{38} \approx -0.053\]</span></p>
+<p>That is, on average, you lose five cents on every spin of the wheel.</p>
+<p>This also means that the expected value for 50 spins is about –2.6. That should also be (roughly) the mean of your distribution for <code>net</code>—and it should get closer if you increase the sample size.</p>
+<p>That said, your graph should show clearly that not very many players lose exactly $2.00. That is, <em>you shouldn’t expect the expected value</em>. This is an important statistical lesson about variability!</p>
+<p><strong>Psychology of Gambling</strong>. It’s an interesting question whether we in school should avoid problems that involve gambling. One strategy is to do what we do here: present information that might help serve to inoculate students.</p>
+<p>In a more sophisticated simulation, students could ask, what fraction of all players were <em>ever</em> ahead during their 50 spins? That turns out to be more than half, which might lead even more people to have a positive, “I <em>almost</em> won” feeling about their trip to the casino.</p>
+<p>But of course, the house always comes out ahead.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -339,10 +399,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./230-stats-pulse.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Statistics • Pulse</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./050-basics.html" class="pagination-link">
-        <span class="nav-page-text">CODAP basics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./400-computational-thinking.html" class="pagination-link">
+        <span class="nav-page-text">Computational thinking</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

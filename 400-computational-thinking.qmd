@@ -34,7 +34,7 @@ in order to prepare students for a world where that digital technology is so imp
 The same can be said for data, as implied in the [introduction](index.qmd).
 
 We also mentioned there that our big topics overlap.
-So the [probability](probability.qmd) page with its roulette example
+So the [probability](300-probability.qmd) page with its roulette example
 also addresses computational thinking through the "models and simulation"
 channel.
 If a student created such a simulation om their own in order to
