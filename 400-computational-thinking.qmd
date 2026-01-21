@@ -3,20 +3,11 @@
 
 ## Computational Thinking
 
-::: {.callout-caution}
-## You're here early!
-
-We will officially release this page in July 2024, when the article about 
-computational thinking comes out in the AMEJ.
-
-But you've gone to the trouble of finding this page, 
-we might as well let you see where we are!
-:::
 
 Computational thinking is the last and, in many ways, 
 the most complex of our four topics. 
 
-[The v9.0 curriculum materials](https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics) list 
+[The v9.0 curriculum materials](https://v9.australiancurriculum.edu.au/teacher-resources/understand-this-learning-area/mathematics){target="_blank"} list 
 several components:
 
 * decomposition,
@@ -53,7 +44,7 @@ Let's have students code.
 Yes!
 
 There is a plugin, `simmer`, that lets students use block programming
-techniques (similar to [Scratch](https://scratch.mit.edu/)) 
+techniques (similar to [Scratch](https://scratch.mit.edu/){target="_blank"}) 
 to create probability simulations.
 
 In the live example below, press the green "play" triangle
@@ -80,3 +71,6 @@ but where the average value of the sum is zero.
     awash.liveDemoAt(theURL);
 </script>
 :::
+
+For a deeper discussion---with lots of examples---about using this plugin to explore probability,
+visit [this simmer guide](https://codap.xyz/guides/simmer/){target="_blank"}.

@@ -12,7 +12,7 @@ It was prepared and designed by Tim and hosted (thanks, AAMT!) at AMEJ.
 
 Do you want to make a website like this? 
 It's easier than it looks, thanks to the good people
-at [quarto](https://www.quarto.org).
+at [quarto](https://www.quarto.org){target="_blank"}.
 
 It's all written in text files using the extension `qmd`, 
 which stands for "quarto markdown."
@@ -27,11 +27,11 @@ The heading and first paragraph look like this in markdown:
 
 Do you want to make a website like this? 
 It's easier than it looks, thanks to the good people
-at [quarto](https://www.quarto.org).
+at [quarto](https://www.quarto.org){target="_blank"}.
 ```
 
 If you want to see exactly how _this_ website was done, 
 it's open source. 
 You can download the whole thing from 
-[github](https://github.com/eepsmedia/AMEJ).
+[github](https://github.com/eepsmedia/AMEJ){target="_blank"}.
 

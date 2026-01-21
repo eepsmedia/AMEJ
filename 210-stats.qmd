@@ -3,7 +3,7 @@
 ## Statistical investigation
 
 CODAP is a data analysis platform, 
-so we expect it to help with statitical investigations.
+so we expect it to help with statistical investigations.
 One simple example won't do, however! 
 School statistics covers a lot of ground,
 ranging from making simple graphs and calculations in primary school
@@ -108,11 +108,9 @@ How do we add box plots?
 ![](art/stats-height-age-box.png){width="100%"}
 :::
 
-
 * Return to the ruler palette, and under `Box Plot and Normal Curve`,
 check the `Box Plot` item. 
 * To get rid of the points, go to the paintbrush and make the point size go to zero.
-
 
 * Investigate other relationships by making other graphs,
 for example, `Height` against `ArmSpan`^[...which creates an opportunity for modelling with a function!].
@@ -122,9 +120,5 @@ All of that lives in the realm of exploratory data analysis.
 Of course, there is a great deal more you can do with CODAP in EDA! 
 You can find answers to many questions using the help system;
 you can also read more and see more online lessons
-in the (free) book, [Awash in Data](https://concord.org/awashindata).
+in the (free) book, [Awash in Data](https://concord.org/awashindata){target="_blank"}.
 
-
-A takeaway, we hope, is that CODAP gives you a tool and an environment
-that can serve students from the very first bit of EDA 
-all the way through formal inference. 

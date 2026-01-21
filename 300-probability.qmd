@@ -2,15 +2,7 @@
 
 ## Probability Experiments and Simulations
 
-::: {.callout-caution}
-## You're here early!
-
-We will officially release this page in May 2024, when the article about 
-probability and simulation comes out in the AMEJ.
-
-But you've gone to the trouble of finding this page, 
-we might as well let you see where we are!
-:::
+This article is all about experimenting with probability in CODAP.
 
 ### Examples from the journal article
 
@@ -101,7 +93,7 @@ In the box, type `red` and a minus sign
 and then start typing `not`. 
 CODAP will give you "not red" as an option; take it.
 You'll see that (because of the space) CODAP 
-surrounds the name `'not red'` with ticks. 
+surrounds the name `'not red'` with back-ticks. 
 
 ![](art/prob-formula.png){width="40%" fig-align="center"}
 
@@ -154,7 +146,7 @@ A lot of problems are binomial, though, so using
 this Binomial Simulator gives you an interesting,
 relatively simple entry into simulation.
 Want to see other binomial problems?
-Check out [this chapter in the online book, *Awash in Data*](https://codap.xyz/awash/07.10-binomial.html).
+Check out [this chapter in the online book, *Awash in Data*](https://codap.xyz/awash/07.10-binomial.html){target="_blank"}.
 
 **Expected Value**. 
 The expected value for one spin will be 

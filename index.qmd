@@ -45,14 +45,3 @@ you can use as you move forward.
 
 See the links on the left? 
 Begin with `CODAP basics` and then move on to other topics. 
-
-The topics officially appear according to the schedule below. 
-But we have prepared draft examples in advance so that
-you can "read ahead" if you are interested. 
-
-| AMEJ issue | topic |
-|----|----|
-| January 2024 | Modelling |
-| May 2024? | Statistics |
-| July 2024? | Probability |
-| September 2024? | Computational thinking |

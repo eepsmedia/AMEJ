@@ -31,8 +31,7 @@ Let's make the first graph from the article:
 
 * Click `Graph` in the toolbar. A graph appears with random points.
 * From the table, drag `role` to the horizontal axis and `pulse` to the vertical.
-* Now, in the graph, click the ruler icon and choose mean (it's unser
-`Measures of Center`)
+* Now, in the graph, click the ruler icon and choose mean (it's under `Measures of Center`)
 * Hover over the blue lines to see the values of the mean.
 Estimate the difference between the teachers and the students.
 
@@ -55,10 +54,11 @@ so instead of just estimating it, we'll calculate it.
 * Click on that new heading (`diffPulse`) to get its menu. 
 Choose `Edit Formula...`. The formula box appears.
 * Enter this formula. 
-It's long, but you can use copy and paste to make it easier to enter.
+It's long, but you can use copy and paste to make it easier to enter:
+`mean(pulse, role = 'teacher') - mean(pulse, role = 'student')`
 
 
-![](art/stats-pulse-measure-formula.png)
+![What the editor looks like on the screen](art/stats-pulse-measure-formula.png)
 
 * Click `Apply`.
 
@@ -162,7 +162,7 @@ there is no association between `role` and `pulse`.
 </script>
 :::
 
-Our true value, the _test statitsic_, however, is 5.8. 
+Our true value, the _test statistic_, however, is 5.8. 
 Where is that in the graph? 
 
 * Click on the `measures` graph to select it. 

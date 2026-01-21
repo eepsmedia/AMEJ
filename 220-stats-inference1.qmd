@@ -73,7 +73,7 @@ Although we could do a formal $t$-test...
 ...many stats educators are turning instead to 
 randomization-based inference. 
 
-## Infeernce at last!
+## Inference at last!
 
 Feeling brave? Try this:
 

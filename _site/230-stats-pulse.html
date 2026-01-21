@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Click <code>Graph</code> in the toolbar. A graph appears with random points.</li>
 <li>From the table, drag <code>role</code> to the horizontal axis and <code>pulse</code> to the vertical.</li>
-<li>Now, in the graph, click the ruler icon and choose mean (it’s unser <code>Measures of Center</code>)</li>
+<li>Now, in the graph, click the ruler icon and choose mean (it’s under <code>Measures of Center</code>)</li>
 <li>Hover over the blue lines to see the values of the mean. Estimate the difference between the teachers and the students.</li>
 </ul>
 <p>So far, we’re just exploring, and we’ve discovered an <em>effect</em> that we’re interested in: that teacher pulses seem to be systematically different from student pulses. You can make any number of interesting graphs using these data, but we will stick with the effect of <code>role</code> on <code>pulse</code>.</p>
@@ -193,9 +193,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Click on the table and find the gray circle with the plus sign.</li>
 <li>Click that to make a new attribute (column). Name it <code>diffPulse</code>.</li>
 <li>Click on that new heading (<code>diffPulse</code>) to get its menu. Choose <code>Edit Formula...</code>. The formula box appears.</li>
-<li>Enter this formula. It’s long, but you can use copy and paste to make it easier to enter.</li>
+<li>Enter this formula. It’s long, but you can use copy and paste to make it easier to enter: <code>mean(pulse, role = 'teacher') - mean(pulse, role = 'student')</code></li>
 </ul>
-<p><img src="art/stats-pulse-measure-formula.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="art/stats-pulse-measure-formula.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">What the editor looks like on the screen</figcaption><p></p>
+</figure>
+</div>
 <ul>
 <li>Click <code>Apply</code>.</li>
 </ul>
@@ -285,7 +290,7 @@ Tip
     awash.liveDemoAt(theURL3);
 </script>
 </div>
-<p>Our true value, the <em>test statitsic</em>, however, is 5.8. Where is that in the graph?</p>
+<p>Our true value, the <em>test statistic</em>, however, is 5.8. Where is that in the graph?</p>
 <ul>
 <li>Click on the <code>measures</code> graph to select it.</li>
 <li>Then, in the ruler palette, look under <code>Plotted and Movable Values</code>. Click <code>Add Movable Value</code>.</li>

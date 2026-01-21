@@ -82,6 +82,7 @@ Working inside this site can be constraining.
 To see this CODAP file "normally," in your browser,
 [use this link](https://codap.concord.org/releases/latest/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FQlXPoFoFsrzmRGJ1h8YF%2Ffile.json){target="_blank"}.
 :::
+
 ### More commentary
 
 **Functional form**. 
